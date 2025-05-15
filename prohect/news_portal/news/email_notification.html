@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Новая новость</title>
+</head>
+<body>
+    <h1>Здравствуйте, {{ subscriber.username }}!</h1>
+    <p>В категории "{{ news.category.name }}" появилась новая новость:</p>
+    <h2>{{ news.title }}</h2>
+    <p>{{ news.content|truncatechars:100 }}</p>
+    <a href="http://your-site.com/news/{{ news.id }}">Читать полностью</a>
+</body>
+</html>
